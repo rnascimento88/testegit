@@ -1,6 +1,4 @@
- 
-
-name: Deploy via ftp 
+ name: Deploy via ftp 
       on: push 
       jobs: 
         deploy: 
@@ -15,4 +13,4 @@ name: Deploy via ftp
               host: ${{ secrets.HOST }}  
               user: ${{ secrets.USER }} 
               password: ${{ secrets.PASS }} 
-              localDir: "dist" 
+              localDir: "public_html" 
